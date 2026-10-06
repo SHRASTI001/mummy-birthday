@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Dearest Mummy 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="floating-hearts" id="hearts"></div>
+
+    <!-- PAGE 1 : WELCOME -->
+
+    <section class="page active" id="page1">
+
+        <div class="welcome-card">
+
+            <div class="flower">✿</div>
+
+            <p class="eyebrow">A LITTLE SURPRISE FOR SOMEONE SPECIAL</p>
+
+            <h1>Happy Birthday</h1>
+
+            <h2>Meri Pyari Mummy 💗</h2>
+
+            <p class="description">
+                Aaj ka din sirf aapke naam...
+                because you make every day beautiful.
+            </p>
+
+            <div class="date-tag">Made with endless love ♡</div>
+
+            <button class="primary-btn" onclick="nextPage(2)">
+                Open Your Surprise
+                <span>→</span>
+            </button>
+
+            <p class="small-note">A little gift from your loving child</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 : GIFT -->
+
+    <section class="page" id="page2">
+
+        <div class="content-card">
+
+            <p class="eyebrow">SOMETHING SPECIAL FOR YOU</p>
+
+            <h1>A Gift From My Heart 🎁</h1>
+
+            <p class="description">
+                Mummy, aapke liye ek chhota sa surprise hai.
+                Open it and see!
+            </p>
+
+            <div class="gift-container" id="gift" onclick="openGift()">
+
+                <div class="gift-lid" id="giftLid">
+                    <div class="gift-bow"></div>
+                </div>
+
+                <div class="gift-box">
+                    <div class="gift-ribbon"></div>
+                </div>
+
+                <img id="giftSurpriseGif"
+     class="gift-surprise-gif"
+     src=""
+     alt="Birthday surprise">
+
+            </div>
+
+            <p id="giftText" class="gift-text">
+                Tap the gift to open 💗
+            </p>
+
+            <button class="primary-btn hidden" id="giftNext"
+                    onclick="nextPage(3)">
+                See Our Memories →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 : GALLERY -->
+
+    <section class="page" id="page3">
+
+        <div class="content-card gallery-card">
+
+            <p class="eyebrow">OUR LITTLE WORLD</p>
+
+            <h1>Beautiful Memories 📸</h1>
+
+            <p class="description">
+                Har photo mein ek kahani hai,
+                aur har kahani mein aapka pyaar.
+            </p>
+
+            <div class="gallery">
+
+                <div class="photo">
+                    <img src="images/mummy1.jpg" alt="Mummy memory 1"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="photo-placeholder">💗<br>Our Beautiful Memory</div>
+                    <span>My Forever Favorite</span>
+                </div>
+
+                <div class="photo">
+                    <img src="images/mummy2.jpg" alt="Mummy memory 2"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="photo-placeholder">🌷<br>Precious Moments</div>
+                    <span>My Happy Place</span>
+                </div>
+
+                <div class="photo">
+                    <img src="images/mummy3.jpg" alt="Mummy memory 3"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="photo-placeholder">✨<br>Love Forever</div>
+                    <span>My Sweet Mom</span>
+                </div>
+
+            </div>
+
+            <button class="primary-btn" onclick="nextPage(4)">
+                A Letter For You 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 4 : LETTER -->
+
+    <section class="page" id="page4">
+
+        <div class="letter-card">
+
+            <div class="letter-icon">💌</div>
+
+            <p class="eyebrow">WORDS FROM MY HEART</p>
+
+            <h1>Dear Mummy,</h1>
+
+            <div class="letter-content">
+
+                <p>Meri Pyari Mummy,</p>
+
+                <p>
+                    Aap meri life ka sabse beautiful gift ho.
+                    Aapne hamesha mujhe pyaar diya, support kiya
+                    aur har situation mein mera saath diya.
+                </p>
+
+                <p>
+                    Shayad main har baar express nahi kar pati,
+                    lekin aap mere liye duniya ki sabse special
+                    person ho.
+                </p>
+
+                <p>
+                    Aapki smile meri happiness hai,
+                    aapki khushi meri dua hai.
+                </p>
+
+                <p>
+                    Meri bas yahi wish hai ki aap hamesha
+                    khush raho, muskurati raho aur aapki
+                    saari khushiyan poori hon.
+                </p>
+
+                <p class="letter-highlight">
+                    Thank you for being my mother,
+                    my comfort and my forever home. 💗
+                </p>
+
+            </div>
+
+            <p class="signature">
+                Lots of love,<br>
+                Your loving child ♡
+            </p>
+
+            <button class="primary-btn" onclick="nextPage(5)">
+                One More Surprise →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 : CAKE -->
+
+    <section class="page" id="page5">
+
+        <div class="content-card">
+
+            <p class="eyebrow">MAKE A WISH</p>
+
+            <h1>Let's Celebrate! 🎂</h1>
+
+            <p class="description">
+                Mummy, candles blow karo aur ek beautiful wish maango!
+            </p>
+
+            <div class="cake-scene">
+
+                <div class="candles">
+
+                    <div class="candle">
+                        <div class="flame" id="flame1"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame" id="flame2"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame" id="flame3"></div>
+                    </div>
+
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-body"></div>
+                <div class="cake-plate"></div>
+
+            </div>
+
+            <h2 id="wishText">Make a beautiful wish, Mummy! ✨</h2>
+
+            <button class="primary-btn" id="blowBtn" onclick="blowCandles()">
+                Blow the Candles 🕯️
+            </button>
+
+            <button class="primary-btn hidden" id="celebrateBtn"
+                    onclick="nextPage(6)">
+                Final Surprise 💗
+            </button>
+
+        </div>
+
+    </section>
+
+
+    
+<!-- PAGE 6 : BALLOON POP SURPRISE -->
+
+<section class="page" id="page6">
+
+    <div class="balloon-surprise">
+
+        <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+
+        <h1>Pop every balloon 🎈</h1>
+
+        <p class="description">
+            Each balloon has a little surprise waiting for you 💗
+        </p>
+
+        <div class="balloon-stage">
+
+            <div class="balloon-area" id="balloonArea">
+
+                <button class="surprise-balloon" onclick="popSurprise(0)">🎈</button>
+                <button class="surprise-balloon" onclick="popSurprise(1)">🎈</button>
+                <button class="surprise-balloon" onclick="popSurprise(2)">🎈</button>
+                <button class="surprise-balloon" onclick="popSurprise(3)">🎈</button>
+                <button class="surprise-balloon" onclick="popSurprise(4)">🎈</button>
+                <button class="surprise-balloon" onclick="popSurprise(5)">🎈</button>
+
+            </div>
+
+            <div class="surprise-card" id="surpriseCard">
+
+                <div class="surprise-card-inner">
+
+                    <img id="surpriseGif" src="" alt="Birthday surprise GIF">
+
+                    <p id="surpriseMessage"></p>
+
+                </div>
+
+                <button class="pop-another-btn" id="popAnotherBtn"
+                        onclick="nextSurprise()">
+                    POP ANOTHER ↗
+                </button>
+
+            </div>
+
+        </div>
+
+        <p class="balloon-counter" id="balloonCounter">
+            6 left to pop
+        </p>
+
+        <button class="primary-btn hidden" id="balloonNext"
+                onclick="nextPage(7)">
+            Next → 💗
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- PAGE 7 : FINAL SURPRISE -->
+
+    <section class="page" id="page7">
+
+        <div class="final-card">
+
+            <div class="final-flower">💐</div>
+
+            <p class="eyebrow">A LITTLE REMINDER</p>
+
+            <h1>We Love You, Mummy!</h1>
+
+            <p class="final-message">
+                Aap sirf meri Mummy nahi,
+                meri life ki sabse precious blessing ho.
+            </p>
+
+            <h2>Happy Birthday! Maa!! 💗</h2>
+
+            <div class="final-heart">♡</div>
+
+            <button class="primary-btn" onclick="celebrate()">
+                Send More Love 💖
+            </button>
+
+            <button class="secondary-btn" onclick="nextPage(1)">
+                ↻ Relive the Surprise
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- NAVIGATION -->
+
+    <div class="navigation">
+
+        <button id="backBtn" onclick="goBack()">
+            ← Back
+        </button>
+
+        <span id="pageCount">01 / 07</span>
+
+        <button id="nextBtn" onclick="goForward()">
+            Next →
+        </button>
+
+    </div>
+
+    <div class="footer">
+        Made with ♡ especially for Meri Pyari Mummy
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
